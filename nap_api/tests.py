@@ -7,8 +7,8 @@ class NapApiTest(ApiTestCase):
 
     def setUp(self):
         super(NapApiTest, self).setUp()
-        self.entry_list_uri = reverse('entry_list_default')
-        self.entry_detail_uri = reverse('entry_object_default', args=(self.entry1.id, ))
+        self.entry_list_uri = reverse('api_entry_list_default')
+        self.entry_detail_uri = reverse('api_entry_object_default', args=(self.entry1.id, ))
 
     def get_content_objects(self, content_data):
         return content_data['objects']

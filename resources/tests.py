@@ -47,7 +47,7 @@ class ApiTestCase(TestCase):
         response = self.c.post(self.entry_list_uri, data=json.dumps(entry_copy),
                                content_type=JSON_TYPE)
 
-        self.assertEqual(response.status_code, 201, response.content)
+        self.assertIn(response.status_code, [200, 201], response.content)
         self.assertEqual(Entry.objects.count(), 2)
 
         entry_copy = {'user': user_key, 'title': '', 'content': 'some entry'}
