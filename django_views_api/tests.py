@@ -11,7 +11,7 @@ class DjangoViewApiTest(ApiTestCase):
         self.entry_detail_uri = reverse('entry-detail-django-view', args=(self.entry1.id, ))
 
     def get_content_objects(self, content_data):
-        return content_data['objects']
+        return content_data
 
     def test_get_list_api(self):
         self.get_list_api()

@@ -52,7 +52,7 @@ class ApiListView(View):
 
     def get(self, request, *args, **kwargs):
         serialized_data = CustomSerializer().serialize(self.model.objects.all())
-        return JsonResponse(data={'objects': serialized_data})
+        return JsonResponse(data=serialized_data, safe=False)
 
     def post(self, request, *args, **kwargs):
         data = json.loads(request.body)
