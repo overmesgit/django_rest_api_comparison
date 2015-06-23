@@ -48,6 +48,7 @@ class EntryResource(ModelResource):
         resource_name = 'entry'
         authorization = Authorization()
         validation = EntryValidator(form_class=EntryForm)
+        always_return_data = True
 
 
 entry_resource = EntryResource()
