@@ -1,7 +1,0 @@
-"Method","Name","# requests","# failures","Median response time","Average response time","Min response time","Max response time","Average Content Size","Requests/s"
-"GET","/django_view/entry/",471,205,4000,10438,811,88209,5400,4.62
-"GET","/nap/api/entry/",425,173,4200,10917,905,65583,5475,4.17
-"GET","/rest_framework/entry/",459,204,4000,10196,865,84709,9151,4.50
-"GET","/restless/entry/",418,199,4000,10731,814,75596,5400,4.10
-"GET","/tastypie/entry/",410,213,4000,9215,873,71427,8413,4.02
-"None","Total",2183,994,4000,10307,811,88209,6769,21.40
