@@ -1,1 +1,4 @@
-Compare django rest api libraries .
+Compare django rest api libraries.
+
+### Requirements
+python2.7
